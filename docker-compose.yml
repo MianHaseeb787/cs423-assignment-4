@@ -1,0 +1,50 @@
+version: '3'
+
+services:
+  control:
+    image: ubuntu
+    hostname: control
+    command: sleep infinity
+    ports:
+      - "1111:11"
+    networks:
+      - cs423-assignment-4
+
+  container1:
+    image: ubuntu
+    hostname: container1
+    command: sleep infinity
+    ports:
+      - "1113:22"
+    networks:
+      - cs423-assignment-4
+
+  container2:
+    image: ubuntu
+    hostname: container2
+    command: sleep infinity
+    ports:
+      - "1114:22"
+    networks:
+      - cs423-assignment-4
+
+  container3:
+    image: ubuntu
+    hostname: container3
+    command: sleep infinity
+    ports:
+      - "1115:22"
+    networks:
+      - cs423-assignment-4
+
+  container4:
+    image: ubuntu
+    hostname: container4
+    command: sleep infinity
+    ports:
+      - "1116:22"
+    networks:
+      - cs423-assignment-4
+
+networks:
+  cs423-assignment-4:
